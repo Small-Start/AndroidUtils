@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myhp.thenewboston" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".Newstart"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".startingpoint"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.myhp.thenewboston.NEWSTART" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.myhp.thenewboston.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Textplay"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Email"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Cameraview"
+            android:label="camera g!"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name=".Data"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Openedclass"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Aboutus"
+            android:label="thenewboston"
+            android:theme="@android:style/Theme.Dialog"
+            ></activity>
+        <activity
+            android:name=".Prefs"
+            android:label="thenewboston"
+            />
+        <activity
+            android:name=".Gfx"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Gfxsurface"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Soundstuss"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Tabs"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Simplebrowser"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Flipper"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".SharedPrefs"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Internaldata"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Notify"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Externaldata"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Voice"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".TextVoice"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Sqliteexample"
+            android:label="thenewboston"
+            ></activity>
+        <activity
+            android:name=".Sqlview"
+            android:label="thenewboston"
+            ></activity>
+    </application>
+
+<uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+</manifest>

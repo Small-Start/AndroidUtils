@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">thenewboston</string>
+
+    <string name="hello_world">Your total is 0</string>
+    <string name="action_settings">Settings</string>
+</resources>

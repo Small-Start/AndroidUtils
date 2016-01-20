@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KANISHK is.........."
+        android:id="@+id/tvis"
+        android:textSize="40dp" />
+
+    <RadioGroup
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgsi"
+        android:layout_weight="0.10">
+        <RadioButton
+            android:text="CRAZY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/crazy"/>
+        <RadioButton
+            android:text="IDIOT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idiot"/>
+        <RadioButton
+            android:text="both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/both"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="return"
+        android:id="@+id/breturn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvsi"
+        android:textSize="25dp" />
+
+</LinearLayout>
