@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INCLUDE MASS BUNK"
+        android:id="@+id/checkBox2"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Change Attendance Criteria"
+        android:textSize="20dp"
+        android:id="@+id/changecriteriab"
+        android:background="@android:color/transparent"
+        />
+
+</LinearLayout>

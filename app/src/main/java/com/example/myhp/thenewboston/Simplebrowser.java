@@ -18,7 +18,7 @@ public class Simplebrowser extends Activity implements View.OnClickListener{
     EditText et;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+       super.onCreate(savedInstanceState);
         setContentView(R.layout.browser);
         ourbrow=(WebView)findViewById(R.id.wvbrowser);
         ourbrow.getSettings().setJavaScriptEnabled(true);

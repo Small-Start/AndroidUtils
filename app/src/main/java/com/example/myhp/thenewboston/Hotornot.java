@@ -50,6 +50,43 @@ public class Hotornot {
         return result;
     }
 
+    public String getname(long l) {
+
+        String[] columns=new String[] {KEY_ROWID,KEY_NAME,KEY_HOTNESS};
+
+        Cursor c=ourdatabase.query(DATABASE_TABLE,columns,KEY_ROWID+"="+l,null,null,null,null);
+        if(c!=null){
+            c.moveToFirst();
+            String name=c.getString(1);
+            return name;
+        }
+        return null;
+    }
+
+    public String gethotness(long l) {
+        String[] columns=new String[] {KEY_ROWID,KEY_NAME,KEY_HOTNESS};
+
+        Cursor c=ourdatabase.query(DATABASE_TABLE,columns,KEY_ROWID+"="+l,null,null,null,null);
+        if(c!=null){
+            c.moveToFirst();
+            String hotness=c.getString(2);
+            return hotness;
+        }
+        return null;
+    }
+
+    public void updateEntry(long l, String name, String hotness) {
+
+        ContentValues cv=new ContentValues();
+        cv.put(KEY_NAME,name);
+        cv.put(KEY_HOTNESS,hotness);
+        ourdatabase.update(DATABASE_TABLE,cv,KEY_ROWID+"="+l,null);
+    }
+
+    public void deleteEntry(long l) {
+        ourdatabase.delete(DATABASE_TABLE,KEY_ROWID+"="+l,null);
+    }
+
 
     private static class Dbhelper extends SQLiteOpenHelper {
         public Dbhelper(Context context) {

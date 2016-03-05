@@ -13,7 +13,7 @@ import android.widget.ListView;
  * Created by my hp on 10/4/2015.
  */
 public class Menu extends ListActivity{
-String [] classes={"startingpoint","Textplay","Email","Cameraview","Data","Gfx","Gfxsurface","Soundstuss","Tabs","Simplebrowser","Flipper","SharedPrefs","Internaldata","Notify","Externaldata","Voice","TextVoice","Sqliteexample"};
+String [] classes={"startingpoint","Textplay","Email","Cameraview","Data","Gfx","Gfxsurface","Soundstuss","Tabs","Simplebrowser","Flipper","SharedPrefs","Internaldata","Notify","Externaldata","Voice","TextVoice","Sqliteexample","Accelerate","Navigationdrawer","Barcode","MainActivity","Listexample","Locationlast","MainActivityTabs","ExpandableListExample","Trysearchview"};
 
     @Override
     protected void onCreate(Bundle saved)

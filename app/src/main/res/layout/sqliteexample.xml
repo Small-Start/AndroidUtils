@@ -63,6 +63,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/button10" />
+        android:text="Delete Entry"
+        android:id="@+id/bdeleteentry" />
 </LinearLayout>

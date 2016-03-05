@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myhp.thenewboston" >
+    package="com.example.myhp.thenewboston">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".Newstart"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +26,7 @@
         </activity>
         <activity
             android:name=".startingpoint"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.example.myhp.thenewboston.NEWSTART" />
 
@@ -28,7 +35,7 @@
         </activity>
         <activity
             android:name=".Menu"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.example.myhp.thenewboston.MENU" />
 
@@ -37,94 +44,117 @@
         </activity>
         <activity
             android:name=".Textplay"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Email"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Cameraview"
             android:label="camera g!"
-            android:screenOrientation="portrait"
-            ></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Data"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Openedclass"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Aboutus"
             android:label="thenewboston"
-            android:theme="@android:style/Theme.Dialog"
-            ></activity>
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".Prefs"
-            android:label="thenewboston"
-            />
+            android:label="thenewboston" />
         <activity
             android:name=".Gfx"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Gfxsurface"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Soundstuss"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Tabs"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Simplebrowser"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Flipper"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".SharedPrefs"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Internaldata"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Notify"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Externaldata"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Voice"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".TextVoice"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Sqliteexample"
-            android:label="thenewboston"
-            ></activity>
+            android:label="thenewboston" />
         <activity
             android:name=".Sqlview"
+            android:label="thenewboston" />
+        <activity
+            android:name=".Accelerate"
+            android:label="thenewboston" />
+        <activity
+            android:name=".Navigationdrawer"
+            android:label="thenewboston" />
+        <activity
+            android:name=".MainActivity"
             android:label="thenewboston"
-            ></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Listexample"
+            android:label="thenewboston"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivityTabs"
+            android:label="thenewboston"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ExpandableListExample"
+            android:label="thenewboston"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Trysearchview"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".Searchresultactivity" />
+
+            </activity>
+        <activity
+            android:name=".Searchresultactivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+            </activity>
+        <activity
+            android:name=".Locationlast"
+            android:label="thenewboston"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Barcode"
+            android:label="thenewboston"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
-<uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
-    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 </manifest>
